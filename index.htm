@@ -10,17 +10,8 @@
    
    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
-  .red-text {
-    color: red;
-  }
-
   h2 {
     font-family: Lobster, Monospace;
-  }
-
-  p {
-    font-size: 16px;
-    font-family: Monospace;
   }
 
   .thick-green-border {
@@ -29,26 +20,37 @@
     border-style: solid;
     border-radius: 50%;
   }
-
-  .smaller-image {
-    width: 100px;
-  }
 </style>
 
 <div class="container-fluid">
-<h2 class="red-text">CatPhotoApp</h2>
+<h2 class="text-primary text-center">CatPhotoApp</h2>
 
-<p>Click here for <a href="#">cat photos</a>.</p>
 
-<a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+<a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
 
-<p>Things cats love:</p>
+<a href="#"><img class="img-responsive" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt="A cute orange cat lying on its back."></a>
+
+<div class="row">
+   <div class="col-xs-4">
+      <button class="btn btn-primary btn-block">Like</button>
+   </div>
+   <div class="col-xs-4">
+      <button class="btn btn-info btn-block">Info</button>
+   </div>
+   <div class="col-xs-4">
+      <button class="btn btn-danger btn-block">Delete</button>
+   </div> 
+</div>
+
+
+
+<p>Things cats <span class="text-danger"> love</span>:</p>
 <ul>
   <li>cat nip</li>
   <li>laser pointers</li>
   <li>lasagna</li>
 </ul>
-<p>Top 3 things cats hate:</p>
+<p>Top 3 things cats <span class="text-danger">hate:</span></p>
 <ol>
   <li>flea treatment</li>
   <li>thunder</li>
